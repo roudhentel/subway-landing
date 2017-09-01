@@ -1,0 +1,284 @@
+@font-face {
+    font-family: 'HelveticaLT57';
+    src: url("fonts/HelveticaNeueLTStd-Cn.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+$green: #028940;
+$yellow: #ffc20d;
+
+body {
+    div.background {
+        background-image: url("../assets/images/bg.jpg");
+        opacity: .7;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    #fullpage {
+        background-color: transparent !important;
+
+        .section {
+            width: 100%;
+            margin: auto;
+            position: relative;
+            background-color: transparent !important;
+
+
+            &.section-3 {
+                .bg {
+                    background-color: #FFF;
+                }
+
+                .current-section {
+                    height: 150px;
+
+                    .header {
+                        height: 140px;
+
+                        p {
+                            margin-top: 30px;
+                        }
+                    }
+                }
+
+                .section-body {
+                    .row-1 {
+                        margin-top: 150px;
+
+                        h4 {
+                            font-family: HelveticaLT57;
+                            text-align: center;
+                        }
+                    }
+
+                    .row-2 {
+                        h3 {
+                            color: $green;
+                            text-align: center;
+                        }
+                    }
+
+                    .row-3 {
+                        margin-top: 10px;
+                    }
+                }
+
+                .next-section {
+                    .half-circle {
+                        background-color: #FFF;
+                        border-bottom: 3px solid $green;
+
+                        span {
+                            color: $green;
+                        }
+        
+                        i.fa {
+                            color: $green;
+                        }
+                    }
+                }
+            }
+
+            &.section-4 {
+                .current-section {
+                    height: 150px;
+
+                    .header {
+                        height: 140px;
+                        border-bottom: 5px solid #FFF;
+
+                        .row {
+                            height: 100%;
+
+                            .part {
+                                height: 100%;
+                                
+                                &:nth-child(1) {
+                                    background-color: #FFF;
+                                }
+                            }
+                        }
+
+                        .half-circle {
+                            background-color: #FFF;
+
+                            span {
+                                color: $green;
+                            }
+
+                            i.fa {
+                                color: $green;
+                            }
+                        }
+                    }
+                }
+
+                .section-body {
+                    .row-1 {
+                        margin-top: 150px;
+
+                        h4 {
+                            font-family: HelveticaLT57;
+                            text-align: center;
+                            color: $yellow;
+                            font-weight: normal;
+                        }
+                    }
+                }
+            }
+
+            .cwhite {
+                color: #FFF;
+            }
+
+            .cyellow {
+                color: $yellow;
+            }
+
+            .fface-helvetica {
+                font-family: HelveticaLT57;
+            }
+
+            .small {
+                font-size: 85%;
+            }
+
+            .next-section {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 95px;
+                background: #FFF;
+                border: 0;
+                outline: 0;
+                z-index: 1;
+            }
+
+            .bg {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-color: $green;
+                z-index: -1;
+            }
+
+            .current-section {
+                height: 100px;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                background: #FFF;
+
+                .header {
+                    position: absolute;
+                    top: 10px;
+                    width: 100%;
+                    height: 90px;
+                    background: $green;
+
+                    p {
+                        font-size: 150%;
+                        font-family: fantasy;
+                        color: $yellow;
+                        letter-spacing: 1px;
+                        text-align: center;
+                        z-index: 2;
+                        position: absolute;
+                        width: 100%;
+                        top: 10px;
+                    }
+
+                    .half-circle {
+                        top: 50%;
+                        z-index: 1;
+                    }
+                }
+            }
+
+            .half-circle {
+                height: 130px;
+                background: $green;
+                width: 130px;
+                outline: none;
+                border: none;
+                border-radius: 50%;
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                top: -70px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                span {
+                    font-size: 125%;
+                    color: $yellow;
+                    font-family: HelveticaLT57;
+                }
+
+                i.fa {
+                    font-size: 300%;
+                    height: 0px;
+                    color: $yellow;
+                }
+            }
+
+            .section-body {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                width: 50%;
+                margin: 0 auto;
+                overflow-y: auto;
+                overflow-x: hidden;
+                padding-top: 60px;
+            }
+
+            .data {
+                small {
+                    color: #FFF;
+                }
+
+                h2 {
+                    margin: 0;
+                    font-size: 500%;
+                    font-family: fantasy;
+                }
+
+                h3 {
+                    margin: 0;
+                    font-size: 360%;
+                    font-family: fantasy;
+                    color: #FFF;
+                }
+
+                h4 {
+                    margin: 0;
+                    font-size: 300%;
+                }
+
+                .align-center {
+                    text-align: center;
+                }
+                
+                .cgreen {
+                    color: $green;
+                }
+
+                .mgtop100 {
+                    margin-top: 100px;
+                }
+            }
+        }
+    }
+}
