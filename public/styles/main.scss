@@ -47,6 +47,38 @@ body {
         font-size: 12px;
     }
 
+    .pc {
+        display: block;
+
+        @include respond-to(xs) {
+            display: none;
+        }
+
+        @include respond-to(sm) {
+            display: none;
+        }
+    }
+
+    .mobile {
+        display: block;
+
+        @include respond-to(md) {
+            display: none;
+        }
+
+        @include respond-to(lg) {
+            display: none;
+        }
+
+        @include respond-to(xlg) {
+            display: none;
+        }
+
+        @include respond-to(xxlg) {
+            display: none;
+        }
+    }
+
     .r1 {
         width: 50%;
         margin: auto;
@@ -116,7 +148,6 @@ body {
             left: 0;
             top: 0;
             z-index: -1;
-            content: url(../assets/images/1020/header-bg.png);
 
             @include respond-to(xs) {
                 width: 340%;
