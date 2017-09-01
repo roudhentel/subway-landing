@@ -68,28 +68,38 @@ body {
             height: 130px;
             width: 130px;
             border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
             position: relative;
     
+            span, div.img-container {
+                position: absolute;
+                left: 0;
+                right: 0;
+                text-align: center;
+            }
+            
             span {
-                margin-top: 20%;
+                // margin-top: 20%;
                 font-size: 110%;
                 font-family: HelveticaLT57;
-            }
-    
-            img.yellow {
-                // position: absolute;
-                width: 70%;
-                // top: 55%;
-                margin-top: -5px;
+                top: 40%;
+                text-align: center;
             }
 
-            img.black {
-                display: none;
+
+
+            div.img-container {
+                top: 50%;
+
+                img.yellow {
+                    width: 70%;
+                }
+    
+                img.black {
+                    display: none;
+                }
             }
+    
+            
         }
     }
 
@@ -103,6 +113,7 @@ body {
             left: 0;
             top: 0;
             z-index: -1;
+            content: url(../assets/images/1020/header-bg.png);
 
             @include respond-to(xs) {
                 width: 340%;
@@ -372,8 +383,8 @@ body {
             }
             
             .images {
-                display: flex;
                 height: 150px;
+                text-align: center;
 
                 img.menu-sub {
                     width: auto;
