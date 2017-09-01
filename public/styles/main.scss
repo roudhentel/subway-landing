@@ -77,6 +77,10 @@ body {
         @include respond-to(xxlg) {
             display: none;
         }
+
+        @include respond-to(xxxlg) {
+            display: none;
+        }
     }
 
     .r1 {
