@@ -78,7 +78,6 @@ body {
             }
             
             span {
-                // margin-top: 20%;
                 font-size: 110%;
                 font-family: HelveticaLT57;
                 top: 40%;
@@ -89,6 +88,10 @@ body {
 
             div.img-container {
                 top: 50%;
+
+                @include respond-to(lg) {
+                    top: 55%;
+                }
 
                 img.yellow {
                     width: 70%;
@@ -140,7 +143,7 @@ body {
                     margin-top: 10px;
 
                     span {
-                        display: flex;
+                        display: block;
                     }
                 }
 
@@ -505,14 +508,22 @@ body {
                             width: 65%;
                             height: auto;
 
-                            img.yellow {
-                                display: none;
+                            span {
+                                text-align: left;
                             }
 
-                            img.black {
-                                display: block;
-                                margin-left: -5px;
-                                width: 80px;
+                            div.img-container {
+                                top: 10px;
+                                
+                                img.yellow {
+                                    display: none;
+                                }
+    
+                                img.black {
+                                    display: block;
+                                    margin-left: -5px;
+                                    width: 80px;
+                                }
                             }
                         }
 
