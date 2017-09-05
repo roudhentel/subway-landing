@@ -31,7 +31,7 @@ $(document).ready(function () {
 
     $('.move-page3').click(function (e) {
         if ($('.move-page3').hasClass('pageonenotvisible')) {
-            var fheight = $('.page-2 .footer-2.f2').height() + $('.page-2 .footer-2.f1').height();
+            var fheight = $('.page-2 .footer-2.f2').height() + ($(window).width() < 768 ? 0 : $('.page-2 .footer-2.f1').height());
 
             $('.footer-2.f1').hide();
             $('.footer').show();
@@ -47,12 +47,15 @@ $(document).ready(function () {
         } else {
             $('.page-3').show();
             setTimeout(function () {
-                var fheight = $('.page-2 .footer-2.f2').height() + $('.page-2 .footer-2.f1').height();
+                var fheight = $('.page-2 .footer-2.f2').height() + ($(window).width() < 768 ? 0 : $('.page-2 .footer-2.f1').height());
 
                 $('.body').animate({
                     scrollTop: ($('.page-1').height() + $('.page-2').height()) - fheight
                 }, 800, function () {
-                    $('.footer-2.f1').show();
+                    if ($(window).width() > 767) {
+                        $('.footer-2.f1').show();
+                    }
+
                     $('.footer').hide();
                     $('.body-2').hide();
                     $('.body').scrollTop(0);

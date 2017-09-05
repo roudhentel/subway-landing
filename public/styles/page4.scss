@@ -1,0 +1,86 @@
+.page-4 {
+    display: none;
+    width: 100%;
+    overflow: auto;
+    background-color: $white;
+    overflow: hidden;
+    color: $yellow;
+    height: 1500px;
+
+    .heading {
+        h2 {
+            text-align: center;
+            font-family: HelveticaLT57;
+            color: $green;
+            font-size: 330%;
+
+            @include respond-to(xs) {
+                font-size: 200%;
+            }
+        }
+    }
+
+    .heading-details {
+        margin-top: 10px;
+        h3 {
+            text-align: center;
+            color: green;
+            font-family: HelveticaLT57;
+            margin: 0;
+            font-size: 200%;
+
+            &:nth-child(2) {
+                width: 30%;
+                margin: auto;
+            }
+        }
+
+        @include respond-to(xs) {
+            width: 95%;
+            margin: 0 auto;
+            
+            h3 {
+                font-size: 150%;
+                
+                &:nth-child(2) {   
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .form {
+        width: 570px;
+        margin: auto;
+        margin-top: 10px;
+
+        @include respond-to(xs) {
+            width: 100%;
+        }
+
+        .row {
+            margin-top: 20px;
+            font-family: HelveticaLT57;
+
+            input.form-control {
+                border: 5px solid $green;
+                color: $green;
+                border-radius: 0;
+                height: 50px;
+                text-align: center;
+
+                &::-webkit-input-placeholder {
+                    color: $green;
+                }
+            }
+
+            button.btn {
+                background-color: $green;
+                color: $white;
+                border-radius: 0;
+                width: 100%;
+                height: 50px;
+            }
+        }
+    }
+}
