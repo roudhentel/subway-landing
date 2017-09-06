@@ -1,0 +1,201 @@
+.page-2 {
+    display: none;
+    width: 100%;
+    overflow: auto;
+    background-color: $white;
+    overflow: hidden;
+    color: $black;
+
+    .row {
+        @include respond-to(xs) {
+            margin-top: 20px;
+        }
+        h2 {
+            margin: 0;
+            color: $black;
+            font-size: 24pt;
+            text-align: center;
+            font-family: Subway;
+
+            @include respond-to(xs) {
+                font-size: 150%;
+            }
+        }
+        
+        h3 {
+            margin: 0;
+            color: $green;
+            font-family: SubwayBold;
+            font-size: 60pt;
+            text-align: center;
+
+            @include respond-to(xs) {
+                font-size: 210%;
+            }
+        }
+
+        &.bundles {
+            margin-top: 20pt;
+
+            .bundle {
+                height: 450px;
+
+                @include respond-to(xs) {
+                    height: 300px;
+                }
+
+                &:nth-child(1) {
+                    margin-top: 15px;
+                }
+
+                .part {
+                    height: 100%;
+
+                    &:nth-child(1) {
+                        text-align: right;
+                        border-right: 5px solid $grey;
+                        border-bottom: 7px solid $grey;
+
+                        h2, h3, h4 {
+                            margin: 0 0 0 auto;
+                            text-align: right;
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        border-left: 5px solid $grey;
+                        border-bottom: 7px solid $grey;
+
+                        h2, h3, h4 {
+                            margin: 0;
+                            text-align: left;
+                        }
+                    }
+
+                    .row {
+                        margin-bottom: 10pt;
+                    }
+
+                    
+
+                    h2 {
+                        font-size: 30pt;
+                        color: $green;
+                        font-family: SubwayBold;
+                    }
+
+                    h3 {
+                        font-size: 18pt;
+                        color: $dark-green;
+                        font-family: SubwayBold;
+                    }
+
+                    h4 {
+                        font-size: 18pt;
+                        color: $light-green;
+                        width: 80%;
+                    }
+                }
+            }
+        }
+
+        &.footer-2 {
+            height: 130px;
+            position: relative;
+            background-color: $green;
+
+            @include respond-to(xs) {
+                margin: 0;
+                height: 60px;
+            }
+
+            &.f1 {
+                height: 65px;
+                display: none;
+                background-color: $white;
+
+                @include respond-to(xs) {
+                    height: 60px;
+                }
+            }
+
+            &.f2 {
+                @include respond-to(xs) {
+                    background-color: $white;
+                }
+            }
+
+            .rounded-div {
+                background-color: $white;
+                color: $black;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: -50%;
+                margin-left: auto;
+                margin-right: auto;
+
+                @include respond-to(xs) {
+                    background: transparent;
+                    color: $black;
+                    margin: 5px auto;
+                    text-align: left;
+                    display: block;
+                    width: 65%;
+                    height: auto;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+
+                    span {
+                        text-align: center;
+                        top: 0;
+                    }
+
+                    div.img-container {
+                        top: 10px;
+                        
+                        img.green {
+                            display: none;
+                        }
+
+                        img.black {
+                            display: block;
+                            width: 80px;
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+                    }
+                }
+
+                @include respond-to(sm) {
+                    height: 100px;
+                    width: 100px;
+
+                    span {
+                        font-size: 100%;
+                    }
+                }
+
+                @include respond-to(md) {
+                    height: 100px;
+                    width: 100px;
+
+                    span {
+                        font-size: 100%;
+                    }
+                }
+
+                @include respond-to(lg) {
+                    height: 100px;
+                    width: 100px;
+
+                    span {
+                        font-size: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

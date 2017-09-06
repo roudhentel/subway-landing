@@ -1,0 +1,289 @@
+.page-3 {
+    display: none;
+    width: 100%;
+    overflow: auto;
+    background-color: $green;
+    overflow: hidden;
+    color: $yellow;
+
+    .heading {
+
+        h3 {
+            text-align: center;
+            font-family: SubwayBold;
+            font-size: 30pt;
+            color: $yellow;
+            margin: 0;
+        }
+
+        h4 {
+            margin: 0 auto;
+            text-align: center;
+            font-size: 18pt;
+            color: $white;
+            width: 50%;
+
+            &:nth-child(2) {
+                margin-top: 20pt;
+            }
+
+            &:nth-child(3) {
+                margin-top: 10pt;
+            }
+        }
+        
+    }
+
+    .bundles {
+        margin-top: 30px;
+        height: 750px;
+
+        .col-xs-4 {
+            height: 100%;
+
+            &:nth-child(1) {
+                .bundle-choice {
+                    margin: auto;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                }
+            }
+
+            &:nth-child(2) {
+                .bundle-choice {
+                    margin: auto;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                }
+            }
+
+            &:nth-child(3) {
+                .bundle-choice {
+                    margin: auto;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                }
+            }
+
+            .bundle-choice {
+                background-color: $white;
+                width: 60%;
+                height: 80%;
+                transition: all .15s;
+    
+                .row {
+                    text-align: center;
+                }
+
+                &.selected {
+                    transform: scale(1.2);
+                    outline: 2px solid $yellow;
+                }
+    
+                h2 {
+                    font-family: SubwayBold;
+                    font-size: 25pt;
+                    color: $green;
+                    text-align: center;
+                    margin: 10pt 0 0 0;
+                }
+    
+                h5 {
+                    font-size: 11pt;
+                    color: $dark-green;
+                    text-align: center;
+                    margin: 0;
+                }
+    
+                img {
+                    width: 70%;
+                    margin: 10pt auto 20pt;
+                }
+    
+                h4 {
+                    color: $green;
+                    margin: 0;
+                    text-align: center;
+                    margin-bottom: 2px;
+    
+                    &.lbl {
+                        font-family: SubwayBold;
+                        font-size: 12pt;    
+                    }
+                    
+                    &.details {
+                        font-size: 11pt;
+                    }
+                }
+
+                button {
+                    border: 5px solid #028940;
+                    color: #028940;
+                    width: 50%;
+                    border-radius: 0;
+                    background: #FFF;
+                    margin-top: 20pt;
+                    font-family: SubwayBold;
+                    height: 35pt;
+                }
+    
+                h3 {
+                    font-size: 11pt;
+                    color: $light-green;
+                }
+
+                h1 {
+                    font-size: 40pt;
+                    font-family: SubwayBold;
+                    color: $green;
+                    margin: 0;
+                    text-align: center;
+                }
+            }
+        }
+
+        
+    }
+
+    .footer-details {
+        h5 {
+            font-size: 15pt;
+            color: $white;
+            text-align: center;
+            width: 50%;
+            margin: 20pt auto 30pt;
+        }
+
+        h2 {
+            text-align: center;
+            color: $white;
+            font-family: SubwayBold;
+            font-size: 48pt;
+        }
+
+        h6 {
+            text-align: center;
+            margin: 0;
+            color: $white;
+            font-size: 18pt;
+        }
+    }
+
+    .footer-3 {
+        &.f2 {
+            position: relative;
+            height: 65px;
+
+            @include respond-to(sm) {
+                height: 50px;
+            }
+
+            @include respond-to(md) {
+                height: 50px;
+            }
+
+            @include respond-to(lg) {
+                height: 50px;
+            }
+
+            .rounded-div {
+                background-color: $green;
+                color: $white;
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin-left: auto;
+                margin-right: auto;
+
+                @include respond-to(xs) {
+                    background: transparent;
+                    color: $black;
+                    margin: 5px auto;
+                    text-align: left;
+                    display: block;
+                    width: 65%;
+                    height: auto;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    color: $white;
+
+                    span {
+                        text-align: center;
+                        top: 0;
+                    }
+
+                    div.img-container {
+                        top: 10px;
+                        
+                        img.yellow {
+                            display: block;
+                            width: 80px;
+                            margin: 0 auto;
+                        }
+
+                        img.black {
+                            display: none;
+                        }
+                    }
+                }
+
+                @include respond-to(sm) {
+                    height: 100px;
+                    width: 100px;
+
+                    span {
+                        font-size: 100%;
+                    }
+                }
+
+                @include respond-to(md) {
+                    height: 100px;
+                    width: 100px;
+
+                    span {
+                        font-size: 100%;
+                    }
+                }
+
+                @include respond-to(lg) {
+                    height: 100px;
+                    width: 100px;
+
+                    span {
+                        font-size: 100%;
+                    }
+                }
+            }
+        }
+
+        &.f3 {
+            background-color: $white;
+            height: 100px;
+
+            @include respond-to(xs) {
+                height: 0;
+            }
+
+            @include respond-to(sm) {
+                height: 100px;
+            }
+
+            @include respond-to(md) {
+                height: 100px;
+            }
+
+            @include respond-to(lg) {
+                height: 100px;
+            }
+        }
+    }
+}

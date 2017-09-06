@@ -215,10 +215,14 @@
                 margin: 70px auto;
             }
 
+            small {
+                font-size: 20pt;
+            }
+
             ol {
                 margin: 5px 0 0 0;
-                padding: 0 0 0 15px;
-                font-size: 85%;
+                padding: 0 0 0 20pt;
+                font-size: 20pt;
             }
         }
     }
@@ -235,8 +239,8 @@
 
             h4 {
                 margin: 0;
-                font-family: HelveticaLT57;
-                font-size: 220%;
+                font-family: SubwayBold;
+                font-size: 30pt;
                 color: $yellow;
 
                 @include respond-to(xs) {
@@ -259,7 +263,7 @@
         }
 
         .greetings-4 {
-            font-family: HelveticaLT57;
+            font-size: 18pt;
             margin-top: 30px;
 
             @include respond-to(xs) {
@@ -338,6 +342,11 @@
 
                 @include respond-to(md) {
                     margin-top: 20px;
+                }
+
+                img {
+                    margin: 0 auto;
+                    width: 40%;
                 }
 
                 h5 {

@@ -99,4 +99,29 @@ $(document).ready(function () {
             });
         }
     });
+
+    $('.bundle-choice').click(function (e) {
+        $('.bundle-choice').each(function (item) { $(this).removeClass('selected') });
+        $('.bundle-choice .text').text("Choose");
+
+        $(this).addClass('selected');
+        $('.bundle-choice.selected .text').text("Selected");
+    });
 });
+
+function submitForm() {
+    $('.loading').show();
+    setTimeout(() => {
+        $('.page-4 .form .row input.form-control').each(function (idx) {
+            $(this).addClass("submitted");
+        });
+
+        $('.page-4 .form .row button.btn').addClass("submitted");
+        $('.page-4 .form .row button.btn').text("Congratulations");
+        $('.page-3').hide();
+        $('.thank-you').show();
+        $('.logos').show();
+        $('.loading').hide();
+    }, 500);
+
+}
