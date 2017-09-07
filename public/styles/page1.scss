@@ -217,12 +217,20 @@
 
             small {
                 font-size: 20pt;
+
+                @include respond-to(xs) {
+                    font-size: 12pt;
+                }
             }
 
             ol {
                 margin: 5px 0 0 0;
                 padding: 0 0 0 20pt;
                 font-size: 20pt;
+
+                @include respond-to(xs) {
+                    font-size: 12pt;
+                }
             }
         }
     }
@@ -244,7 +252,7 @@
                 color: $yellow;
 
                 @include respond-to(xs) {
-                    font-size: 300%;
+                    font-size: 18pt;
                     color: $black;
                 }
 
@@ -268,6 +276,7 @@
 
             @include respond-to(xs) {
                 color: $black;
+                font-size: 11pt;
             }
 
             @include respond-to(sm) {

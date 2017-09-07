@@ -14,6 +14,11 @@
             font-size: 30pt;
             color: $yellow;
             margin: 0;
+
+            @include respond-to(xs) {
+                font-size: 18pt;
+                margin-top: 10px;
+            }
         }
 
         h4 {
@@ -30,6 +35,19 @@
             &:nth-child(3) {
                 margin-top: 10pt;
             }
+
+            @include respond-to(xs) {
+                font-size: 11pt;
+                width: 80%;
+
+                &:nth-child(2) {
+                    margin-top: 12pt;
+                }
+    
+                &:nth-child(3) {
+                    margin-top: 6pt;
+                }   
+            }
         }
         
     }
@@ -38,8 +56,17 @@
         margin-top: 30px;
         height: 750px;
 
+        @include respond-to(xs) {
+            height: auto;
+        }
+
         .col-xs-4 {
             height: 100%;
+
+            @include respond-to(xs) {
+                height: 470px;
+                width: 100%;
+            }
 
             &:nth-child(1) {
                 .bundle-choice {
@@ -48,6 +75,10 @@
                     top: 0;
                     right: 0;
                     bottom: 0;
+
+                    @include respond-to(xs) {
+                        left: 0;
+                    }
                 }
             }
 
@@ -69,6 +100,10 @@
                     top: 0;
                     left: 0;
                     bottom: 0;
+
+                    @include respond-to(xs) {
+                        right: 0;
+                    }
                 }
             }
 
@@ -93,6 +128,11 @@
                     color: $green;
                     text-align: center;
                     margin: 10pt 0 0 0;
+
+                    @include respond-to(xs) {
+                        font-size: 15pt;
+                        margin: 6pt 0 0 0;
+                    }
                 }
     
                 h5 {
@@ -100,11 +140,19 @@
                     color: $dark-green;
                     text-align: center;
                     margin: 0;
+
+                    @include respond-to(xs) {
+                        font-size: 7pt;
+                    }
                 }
     
                 img {
                     width: 70%;
                     margin: 10pt auto 20pt;
+
+                    @include respond-to(xs) {
+                        margin: 6pt auto 12pt;
+                    }
                 }
     
                 h4 {
@@ -115,11 +163,19 @@
     
                     &.lbl {
                         font-family: SubwayBold;
-                        font-size: 12pt;    
+                        font-size: 12pt;
+                        
+                        @include respond-to(xs) {
+                            font-size: 7pt;
+                        }
                     }
                     
                     &.details {
                         font-size: 11pt;
+
+                        @include respond-to(xs) {
+                            font-size: 7pt;
+                        }
                     }
                 }
 
@@ -132,11 +188,22 @@
                     margin-top: 20pt;
                     font-family: SubwayBold;
                     height: 35pt;
+
+                    @include respond-to(xs) {
+                        border: 3px solid $green;
+                        margin-top: 12pt;
+                        height: 21pt;
+                        line-height: 0;
+                    }
                 }
     
                 h3 {
                     font-size: 11pt;
                     color: $light-green;
+
+                    @include respond-to(xs) {
+                        font-size: 7pt;
+                    }
                 }
 
                 h1 {
@@ -145,6 +212,10 @@
                     color: $green;
                     margin: 0;
                     text-align: center;
+
+                    @include respond-to(xs) {
+                        font-size: 24pt;
+                    }
                 }
             }
         }
@@ -159,6 +230,12 @@
             text-align: center;
             width: 50%;
             margin: 20pt auto 30pt;
+
+            @include respond-to(xs) {
+                font-size: 9pt;
+                margin: 12pt auto 18pt;
+                width: 80%;
+            }
         }
 
         h2 {
@@ -166,6 +243,10 @@
             color: $white;
             font-family: SubwayBold;
             font-size: 48pt;
+
+            @include respond-to(xs) {
+                font-size: 28pt;
+            }
         }
 
         h6 {
@@ -173,6 +254,12 @@
             margin: 0;
             color: $white;
             font-size: 18pt;
+
+            @include respond-to(xs) {
+                font-size: 11pt;
+                width: 85%;
+                margin: 0 auto;
+            }
         }
     }
 

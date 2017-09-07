@@ -7,9 +7,6 @@
     color: $black;
 
     .row {
-        @include respond-to(xs) {
-            margin-top: 20px;
-        }
         h2 {
             margin: 0;
             color: $black;
@@ -18,7 +15,9 @@
             font-family: Subway;
 
             @include respond-to(xs) {
-                font-size: 150%;
+                font-size: 14pt;
+                width: 90%;
+                margin: 20px auto 0;
             }
         }
         
@@ -30,7 +29,7 @@
             text-align: center;
 
             @include respond-to(xs) {
-                font-size: 210%;
+                font-size: 36pt;
             }
         }
 
@@ -60,6 +59,12 @@
                             margin: 0 0 0 auto;
                             text-align: right;
                         }
+
+                        @include respond-to(xs) {
+                            border: 0;
+                            display: block;
+                            width: 100%;
+                        }
                     }
 
                     &:nth-child(2) {
@@ -69,6 +74,12 @@
                         h2, h3, h4 {
                             margin: 0;
                             text-align: left;
+                        }
+
+                        @include respond-to(xs) {
+                            border-left: 0;
+                            display: block;
+                            width: 100%;
                         }
                     }
 
@@ -82,18 +93,30 @@
                         font-size: 30pt;
                         color: $green;
                         font-family: SubwayBold;
+
+                        @include respond-to(xs) {
+                            font-size: 18pt;
+                        }
                     }
 
                     h3 {
                         font-size: 18pt;
                         color: $dark-green;
                         font-family: SubwayBold;
+
+                        @include respond-to(xs) {
+                            font-size: 11pt;
+                        }
                     }
 
                     h4 {
                         font-size: 18pt;
                         color: $light-green;
                         width: 80%;
+
+                        @include respond-to(xs) {
+                            font-size: 11pt;
+                        }
                     }
                 }
             }

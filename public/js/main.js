@@ -107,21 +107,52 @@ $(document).ready(function () {
         $(this).addClass('selected');
         $('.bundle-choice.selected .text').text("Selected");
     });
+
+    // var id;
+    // $(window).resize(function () {
+    //     clearTimeout(id);
+    //     id = setTimeout(changeMetaView, 50);
+    // });
+
+    // changeMetaView();
+    console.log(window.location);
 });
 
 function submitForm() {
-    $('.loading').show();
-    setTimeout(() => {
-        $('.page-4 .form .row input.form-control').each(function (idx) {
-            $(this).addClass("submitted");
-        });
+    if ($('.page-4 .form .row button.btn').text() === "Submit") {
+        $('.loading').show();
+        setTimeout(() => {
+            $('.page-4 .form .row input.form-control').each(function (idx) {
+                $(this).addClass("submitted");
+                $(this).prop("disabled", true);
+            });
 
-        $('.page-4 .form .row button.btn').addClass("submitted");
-        $('.page-4 .form .row button.btn').text("Congratulations");
-        $('.page-3').hide();
-        $('.thank-you').show();
-        $('.logos').show();
-        $('.loading').hide();
-    }, 500);
+            $('.page-4 .form .row button.btn').addClass("submitted");
+            $('.page-4 .form .row button.btn').text("Congratulations");
+            $('.page-3').hide();
+            $('.thank-you').show();
+            $('.logos').show();
+            $('.loading').hide();
 
+            var win = $(window);
+            if (win.width() < 768) {
+                $('.page-4').height(850);
+            }
+        }, 500);
+    }
+}
+
+
+function changeMetaView() {
+    var win = $(window);
+
+    if (win.width() < 768) {
+        // mobile
+        $("#metaViewport").attr('content', 'width=device-width, initial-scale=1, maximum-scale=1');
+        console.log("mobile");
+    } else {
+        // pc
+        $("#metaViewport").attr('content', 'width=1920, initial-scale=1, maximum-scale=1');
+        console.log("pc");
+    }
 }

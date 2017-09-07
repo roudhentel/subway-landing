@@ -8,6 +8,10 @@
     height: 1500px;
     position: relative;
 
+    @include respond-to(xs) {
+        height: 750px;
+    }
+
     .heading {
         h2 {
             text-align: center;
@@ -16,7 +20,7 @@
             font-size: 60pt;
 
             @include respond-to(xs) {
-                font-size: 200%;
+                font-size: 36pt;
             }
         }
     }
@@ -40,7 +44,7 @@
             margin: 0 auto;
             
             h3 {
-                font-size: 150%;
+                font-size: 14pt;
                 
                 &:nth-child(2) {   
                     width: 100%;
@@ -77,8 +81,22 @@
                 &.submitted {
                     border: 6px solid $yellow;
                 }
+
+                &[disabled] {
+                    background-color: #FFF;
+                }
+
+                @include respond-to(xs) {
+                    font-size: 12pt;
+                }
             }
 
+            @include respond-to(xs) {
+                .submit-btn-div {
+                    width: 100%;
+                }
+            }
+            
             button.btn {
                 background-color: $green;
                 color: $white;
@@ -90,6 +108,10 @@
                 &.submitted {
                     background-color: $yellow;
                     color: $green;
+                }
+
+                @include respond-to(xs) {
+                    font-size: 12pt;
                 }
             }
         }
@@ -103,6 +125,14 @@
         img {
             width: 400px;
         }
+
+        @include respond-to(xs) {
+            margin-top: 24pt;
+
+            img {
+                width: 240px;
+            }
+        }
     }
 
     .logos {
@@ -112,6 +142,14 @@
 
         img {
             width: 400px;
+        }
+
+        @include respond-to(xs) {
+            margin-top: 18pt;
+
+            img {
+                width: 240px;
+            }
         }
     }
 
@@ -127,6 +165,14 @@
             color: $black;
             font-size: 10pt;
         }
+
+        @include respond-to(xs) {
+            bottom: 12pt;
+
+            h5 {
+                font-size: 6pt;
+            }
+        }
     }
 
     .loading {
@@ -140,9 +186,12 @@
         right: 0;
 
         .spinner {
-            position: absolute;
-            top: 50%;
-            left: 50%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
         }
     }
 }
@@ -152,6 +201,11 @@
     height: 150px;
     text-align: center;
     font-size: 10px;
+
+    @include respond-to(xs) {
+        width: 40px;
+        height: 40px;
+    }
 }
 
 .spinner > div {
@@ -159,6 +213,10 @@
     height: 100%;
     width: 20px;
     display: inline-block;
+
+    @include respond-to(xs) {
+        width: 6px;
+    }
 
     -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
     animation: sk-stretchdelay 1.2s infinite ease-in-out;
