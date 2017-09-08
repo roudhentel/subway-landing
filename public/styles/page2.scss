@@ -121,6 +121,10 @@
                         @include respond-to(xs) {
                             font-size: 11pt;
                         }
+
+                        @include respond-to(md) {
+                            width: 100%;
+                        }
                     }
                 }
             }
