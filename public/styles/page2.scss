@@ -43,6 +43,10 @@
                     height: 300px;
                 }
 
+                @include respond-to(md) {
+                    height: 480px;
+                }
+
                 &:nth-child(1) {
                     margin-top: 15px;
                 }
