@@ -115,7 +115,7 @@ $(document).ready(function () {
     // });
 
     // changeMetaView();
-    console.log(window.location);
+    // console.log(window.location);
 });
 
 function submitForm() {

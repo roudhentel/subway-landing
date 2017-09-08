@@ -15,6 +15,11 @@
             left: -100%;
             top: -5%;
         }
+
+        @include respond-to(sm) {
+            width: 150%;
+            left: -20%;
+        }
     }
 
     .page-1-bg-color {
@@ -231,6 +236,10 @@
                 @include respond-to(xs) {
                     font-size: 12pt;
                 }
+
+                @include respond-to(sm) {
+                    font-size: 15pt;
+                }
             }
         }
     }
@@ -257,7 +266,7 @@
                 }
 
                 @include respond-to(sm) {
-                    font-size: 140%;
+                    font-size: 22pt;
                 }
 
                 @include respond-to(md) {
@@ -281,6 +290,7 @@
 
             @include respond-to(sm) {
                 margin-top: 30px;
+                font-size: 13pt;
             }
 
             @include respond-to(md) {
@@ -298,6 +308,7 @@
 
             @include respond-to(sm) {
                 margin-top: 30px;
+                height: 90px;
             }
 
             img.menu-sub {
@@ -312,7 +323,7 @@
                 }
 
                 @include respond-to(sm) {
-                    height: 90%;
+                    width: 60%;
                 }
 
                 @include respond-to(md) {
@@ -353,9 +364,13 @@
                     margin-top: 20px;
                 }
 
-                img {
-                    margin: 0 auto;
-                    width: 40%;
+                .col-xs-12 {
+                    text-align: center;
+
+                    img {
+                        margin: 0 auto;
+                        width: 40%;
+                    }
                 }
 
                 h5 {
