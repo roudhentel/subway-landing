@@ -12,6 +12,10 @@
         height: 750px;
     }
 
+    @include respond-to(sm) {
+        height: 874px;
+    }
+
     .heading {
         h2 {
             text-align: center;

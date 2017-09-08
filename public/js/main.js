@@ -137,6 +137,8 @@ function submitForm() {
             var win = $(window);
             if (win.width() < 768) {
                 $('.page-4').height(850);
+            } else if (win.width() < 1025) {
+                $('.page-4').height(1024);
             }
         }, 500);
     }
