@@ -30,6 +30,10 @@
             @include respond-to(sm) {
                 font-size: 45pt;
             }
+
+            @include respond-to(md) {
+                font-size: 45pt;
+            }
         }
     }
 
@@ -61,6 +65,19 @@
         }
 
         @include respond-to(sm) {
+            width: 95%;
+            margin: 0 auto;
+            
+            h3 {
+                font-size: 18pt;
+                
+                &:nth-child(2) {   
+                    width: 100%;
+                }
+            }
+        }
+
+        @include respond-to(md) {
             width: 95%;
             margin: 0 auto;
             
@@ -114,9 +131,21 @@
                 @include respond-to(sm) {
                     font-size: 15pt;
                 }
+
+                @include respond-to(md) {
+                    font-size: 15pt;
+                }
             }
 
             @include respond-to(xs) {
+                .field-col {
+                    width: 100%;
+
+                    &:nth-child(2) {
+                        margin-top: 18px;
+                    }
+                }
+
                 .submit-btn-div {
                     width: 100%;
                 }
@@ -142,6 +171,10 @@
                 @include respond-to(sm) {
                     font-size: 15pt;
                 }
+
+                @include respond-to(md) {
+                    font-size: 15pt;
+                }
             }
         }
     }
@@ -164,6 +197,14 @@
         }
 
         @include respond-to(sm) {
+            margin-top: 30pt;
+
+            img {
+                width: 300px;
+            }
+        }
+
+        @include respond-to(md) {
             margin-top: 30pt;
 
             img {
@@ -196,6 +237,14 @@
                 width: 300px;
             }
         }
+
+        @include respond-to(md) {
+            margin-top: 22.5pt;
+
+            img {
+                width: 300px;
+            }
+        }
     }
 
     .footer-msg {
@@ -219,7 +268,15 @@
             }
         }
 
-        @include respond-to(xs) {
+        @include respond-to(sm) {
+            bottom: 15pt;
+
+            h5 {
+                font-size: 7.5pt;
+            }
+        }
+
+        @include respond-to(md) {
             bottom: 15pt;
 
             h5 {
@@ -264,6 +321,11 @@
         width: 40px;
         height: 40px;
     }
+
+    @include respond-to(md) {
+        width: 40px;
+        height: 40px;
+    }
 }
 
 .spinner > div {
@@ -277,6 +339,10 @@
     }
 
     @include respond-to(sm) {
+        width: 6px;
+    }
+
+    @include respond-to(md) {
         width: 6px;
     }
 

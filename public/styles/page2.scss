@@ -23,6 +23,10 @@
             @include respond-to(sm) {
                 font-size: 18pt;
             }
+
+            @include respond-to(md) {
+                font-size: 19.2pt;
+            }
         }
         
         h3 {
@@ -39,6 +43,10 @@
             @include respond-to(sm) {
                 font-size: 45pt;
             }
+
+            @include respond-to(md) {
+                font-size: 48pt;
+            }
         }
 
         &.bundles {
@@ -47,12 +55,12 @@
             .bundle {
                 height: 450px;
 
-                @include respond-to(xs) {
-                    height: 300px;
+                img {
+                    width: 100%;
                 }
 
-                @include respond-to(sm) {
-                    height: 380px;
+                @include respond-to(xs) {
+                    height: auto;
                 }
 
                 @include respond-to(md) {
@@ -61,6 +69,12 @@
 
                 &:nth-child(1) {
                     margin-top: 15px;
+
+                    @include respond-to(xs) {
+                        .part:nth-child(1) {
+                            border: 0;
+                        }
+                    }
                 }
 
                 .part {
@@ -77,8 +91,7 @@
                         }
 
                         @include respond-to(xs) {
-                            border: 0;
-                            display: block;
+                            //display: block;
                             width: 100%;
                         }
                     }
@@ -94,7 +107,7 @@
 
                         @include respond-to(xs) {
                             border-left: 0;
-                            display: block;
+                            //display: block;
                             width: 100%;
                         }
                     }
@@ -117,6 +130,10 @@
                         @include respond-to(sm) {
                             font-size: 22.5pt;
                         }
+
+                        @include respond-to(md) {
+                            font-size: 24pt;
+                        }
                     }
 
                     h3 {
@@ -130,6 +147,10 @@
 
                         @include respond-to(sm) {
                             font-size: 13.5pt;
+                        }
+
+                        @include respond-to(md) {
+                            font-size: 14.4pt;
                         }
                     }
 
@@ -148,6 +169,7 @@
 
                         @include respond-to(md) {
                             width: 100%;
+                            font-size: 14.4pt;
                         }
                     }
                 }

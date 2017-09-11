@@ -10,15 +10,24 @@
         top: 0;
         z-index: -1;
 
-        @include respond-to(xs) {
-            width: 340%;
-            left: -100%;
-            top: -5%;
-        }
-
         @include respond-to(sm) {
             width: 150%;
             left: -20%;
+        }
+
+        @include respond-to(md) {
+            width: 120%;
+            left: -8%;
+        }
+
+        @include respond-to(lg) {
+            width: 120%;
+            left: -8%;
+        }
+
+        @include respond-to(xlg) {
+            width: 120%;
+            left: -8%;
         }
     }
 
@@ -30,6 +39,10 @@
         bottom: 0;
         background: $green;
         z-index: -2;
+
+        @include respond-to(xs) {
+            background: $dark-green;
+        }
     }
     
     .part-1 {
@@ -153,6 +166,35 @@
                 }
             }
 
+            img.header-bg-content {
+                width: 850px;
+                margin-top: 20px;
+
+                @include respond-to(xs) {
+                    width: 280px;
+                }
+
+                @include respond-to(sm) {
+                    width: 500px;
+                }
+
+                @include respond-to(md) {
+                    width: 500px;
+                }
+
+                @include respond-to(lg) {
+                    width: 600px;
+                }
+
+                @include respond-to(xlg) {
+                    width: 650px;
+                }
+
+                @include respond-to(xxlg) {
+                    width: 700px;
+                }
+            }
+
             img.menu {
                 position: absolute;
                 width: 100%;
@@ -194,30 +236,30 @@
         }
 
         .details-1 {
-            margin: 130px auto;
+            margin: 55px auto;
 
             @include respond-to(xs) {
                 margin: 15px auto 30px;
             }
 
             @include respond-to(sm) {
-                margin: 70px auto 50px;
+                margin: 10px auto 50px;
             }
 
             @include respond-to(md) {
-                margin: 80px auto 40px auto;
+                margin: 30px auto 40px auto;
             }
 
             @include respond-to(lg) {
-                margin: 100px auto 60px;
+                margin: 70px auto 60px;
             }
 
             @include respond-to(xlg) {
-                margin: 35px auto;
+                margin: 60px auto;
             }
 
             @include respond-to(xxlg) {
-                margin: 70px auto;
+                margin: 30px auto;
             }
 
             small {
@@ -238,6 +280,10 @@
                 }
 
                 @include respond-to(sm) {
+                    font-size: 15pt;
+                }
+
+                @include respond-to(md) {
                     font-size: 15pt;
                 }
             }
@@ -270,7 +316,7 @@
                 }
 
                 @include respond-to(md) {
-                    font-size: 140%;
+                    font-size: 22pt;
                 }
 
                 @include respond-to(lg) {
@@ -294,7 +340,7 @@
             }
 
             @include respond-to(md) {
-                margin-top: 20px;
+                margin-top: 13pt;
             }
 
             @include respond-to(lg) {
@@ -307,8 +353,7 @@
             text-align: center;
 
             @include respond-to(sm) {
-                margin-top: 30px;
-                height: 90px;
+                height: 100px;
             }
 
             img.menu-sub {
@@ -323,7 +368,7 @@
                 }
 
                 @include respond-to(sm) {
-                    width: 60%;
+                    height: 180%;
                 }
 
                 @include respond-to(md) {
@@ -386,9 +431,8 @@
                         width: 65%;
                         color: $black;
                         text-align: left;
-                        font-size: 160%;
-                        font-weight: bold;
-                        font-family: HelveticaLT57;
+                        font-size: 9pt;
+                        font-family: Subway;
                     }
 
                     @include respond-to(sm) {

@@ -49,8 +49,6 @@ body {
     }
 
     .pc {
-        display: block;
-
         @include respond-to(xs) {
             display: none;
         }
@@ -58,10 +56,66 @@ body {
         @include respond-to(sm) {
             display: none;
         }
+
+        @include respond-to(md) {
+            display: block !important;
+        }
+
+        @include respond-to(lg) {
+            display: block !important;
+        }
+
+        @include respond-to(xlg) {
+            display: block !important;
+        }
+
+        @include respond-to(xxlg) {
+            display: block !important;
+        }
+
+        @include respond-to(xxxlg) {
+            display: block !important;
+        }
+    }
+
+    .pc-768 {
+        @include respond-to(xs) {
+            display: none;
+        }
+
+        @include respond-to(sm) {
+            display: block !important;
+        }
+
+        @include respond-to(md) {
+            display: none;
+        }
+
+        @include respond-to(lg) {
+            display: none;
+        }
+
+        @include respond-to(xlg) {
+            display: none;
+        }
+
+        @include respond-to(xxlg) {
+            display: none;
+        }
+
+        @include respond-to(xxxlg) {
+            display: none;
+        }
     }
 
     .mobile {
-        display: block;
+        @include respond-to(xs) {
+            display: block !important;
+        }
+
+        @include respond-to(sm) {
+            display: none;
+        }
 
         @include respond-to(md) {
             display: none;
