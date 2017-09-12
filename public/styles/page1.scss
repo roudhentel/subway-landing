@@ -6,28 +6,25 @@
     .img-bg {
         position: absolute;
         width: 100%;
+        height: 47%;
         left: 0;
         top: 0;
         z-index: -1;
 
         @include respond-to(sm) {
-            width: 150%;
-            left: -20%;
-        }
-
-        @include respond-to(md) {
-            width: 120%;
-            left: -8%;
+            height: 43%;
         }
 
         @include respond-to(lg) {
-            width: 120%;
-            left: -8%;
+            height: 44%;
         }
 
         @include respond-to(xlg) {
-            width: 120%;
-            left: -8%;
+            height: 45%;
+        }
+
+        @include respond-to(xxlg) {
+            height: 45%;
         }
     }
 
@@ -294,7 +291,7 @@
         }
 
         .greetings-3 {
-            margin-top: 20px;
+            margin-top: 30px;
 
             h4 {
                 margin: 0;
