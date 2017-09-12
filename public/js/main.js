@@ -72,7 +72,7 @@ $(document).ready(function () {
                     bheight += $(this).height();
                 });
                 $('.bchoice-2').height(bheight + 20);
-                $('.page-3 .bundles').height(bheight + 100);
+                $('.page-3 .bundles').height(bheight + 150);
 
                 bheight = 0;
                 $('.bchoice-1 .row').each(function (e) {
