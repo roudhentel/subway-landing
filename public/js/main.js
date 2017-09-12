@@ -137,7 +137,17 @@ $(document).ready(function () {
     // });
 
     // changeMetaView();
-    // console.log(window.location);
+    var params = getUrlVars();
+
+    if (params.cur && params.cur.toLowerCase().trim() === 'nz') {
+        $('#bundle-price-1').text('$10,420');
+        $('#bundle-price-2').text('$12,140');
+        $('#bundle-price-3').text('$13,603');
+    } else {
+        $('#bundle-price-1').text('$10,223');
+        $('#bundle-price-2').text('$10,223');
+        $('#bundle-price-3').text('$12,670');
+    }
 });
 
 function submitForm() {
@@ -182,4 +192,14 @@ function changeMetaView() {
         $("#metaViewport").attr('content', 'width=1920, initial-scale=1, maximum-scale=1');
         console.log("pc");
     }
+}
+
+function getUrlVars() {
+    var vars = {}, hash;
+    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+    for (var i = 0; i < hashes.length; i++) {
+        hash = hashes[i].split('=');
+        vars[hash[0]] = hash[1];
+    }
+    return vars;
 }
