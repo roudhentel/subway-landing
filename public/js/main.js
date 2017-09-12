@@ -5,6 +5,7 @@ $(document).ready(function () {
             $('.footer').each(function () { var $this = $(this); fheight += $this.height(); });
 
             $('.body-1').show();
+            $('.page-1 .part-2').css({ background: 'none' });
             $('.move-page2').removeClass('pageonenotvisible');
             $('.body').scrollTop($('.page-1').height() - fheight);
             $('.body').animate({
@@ -29,6 +30,9 @@ $(document).ready(function () {
                     $('.body').scrollTop(0);
                     $('.body-1').hide();
                     $('.move-page2').addClass('pageonenotvisible');
+
+                    // set background color
+                    $('.page-1 .part-2').css({ background: '#028940' });
                 });
             });
         }
@@ -61,6 +65,28 @@ $(document).ready(function () {
             $('.page-3').show();
             setTimeout(function () {
                 var fheight = $('.page-2 .footer-2.f2').height() + ($(window).width() < 768 ? 0 : $('.page-2 .footer-2.f1').height());
+
+                // set bundle height
+                var bheight = 0;
+                $('.bchoice-2 .row').each(function (e) {
+                    bheight += $(this).height();
+                });
+                $('.bchoice-2').height(bheight + 20);
+                $('.page-3 .bundles').height(bheight + 100);
+
+                bheight = 0;
+                $('.bchoice-1 .row').each(function (e) {
+                    bheight += $(this).height();
+                });
+                $('.bchoice-1').height(bheight + 20);
+
+                bheight = 0;
+                $('.bchoice-3 .row').each(function (e) {
+                    bheight += $(this).height();
+                });
+                $('.bchoice-3').height(bheight + 20);
+
+                
 
                 $('.body').animate({
                     scrollTop: ($('.page-1').height() + $('.page-2').height()) - fheight

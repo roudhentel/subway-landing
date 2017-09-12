@@ -226,7 +226,15 @@
                     font-size: 25pt;
                     color: $green;
                     text-align: center;
-                    margin: 10pt 0 0 0;
+                    margin: 0;
+                    
+                    &:nth-child(1) {
+                        margin-top: 20px;
+                    }
+
+                    &.y {
+                        color: $yellow;
+                    }
 
                     @include respond-to(xs) {
                         font-size: 15pt;
