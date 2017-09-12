@@ -34,6 +34,18 @@
             @include respond-to(md) {
                 font-size: 45pt;
             }
+
+            @include respond-to(lg) {
+                font-size: 51pt;
+            }
+
+            @include respond-to(xlg) {
+                font-size: 54pt;
+            }
+
+            @include respond-to(xxlg) {
+                font-size: 57pt;
+            }
         }
     }
 
@@ -44,6 +56,18 @@
             color: $black;
             margin: 0;
             font-size: 24pt;
+
+            @include respond-to(lg) {
+                font-size: 20.4pt;
+            }
+
+            @include respond-to(xlg) {
+                font-size: 21.3pt;
+            }
+
+            @include respond-to(xxlg) {
+                font-size: 22.8pt;
+            }
 
             &:nth-child(2) {
                 width: 50%;
@@ -135,6 +159,18 @@
                 @include respond-to(md) {
                     font-size: 15pt;
                 }
+
+                @include respond-to(lg) {
+                    font-size: 17pt;
+                }
+
+                @include respond-to(xlg) {
+                    font-size: 18pt;
+                }
+
+                @include respond-to(xxlg) {
+                    font-size: 19pt;
+                }
             }
 
             @include respond-to(xs) {
@@ -174,6 +210,18 @@
 
                 @include respond-to(md) {
                     font-size: 15pt;
+                }
+
+                @include respond-to(lg) {
+                    font-size: 17pt;
+                }
+
+                @include respond-to(xlg) {
+                    font-size: 18pt;
+                }
+
+                @include respond-to(xxlg) {
+                    font-size: 19pt;
                 }
             }
         }
@@ -258,6 +306,18 @@
             text-align: center;
             color: $black;
             font-size: 10pt;
+
+            @include respond-to(lg) {
+                font-size: 8.5pt;
+            }
+
+            @include respond-to(xlg) {
+                font-size: 9pt;
+            }
+
+            @include respond-to(xxlg) {
+                font-size: 10pt;
+            }
         }
 
         @include respond-to(xs) {

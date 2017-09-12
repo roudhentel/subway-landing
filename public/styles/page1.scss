@@ -167,7 +167,7 @@
             }
 
             img.header-bg-content {
-                width: 850px;
+                width: 925px;
                 margin-top: 20px;
 
                 @include respond-to(xs) {
@@ -183,15 +183,15 @@
                 }
 
                 @include respond-to(lg) {
-                    width: 600px;
+                    width: 750px;
                 }
 
                 @include respond-to(xlg) {
-                    width: 650px;
+                    width: 800px;
                 }
 
                 @include respond-to(xxlg) {
-                    width: 700px;
+                    width: 800px;
                 }
             }
 
@@ -236,7 +236,7 @@
         }
 
         .details-1 {
-            margin: 55px auto;
+            margin: 50px auto 60px;
 
             @include respond-to(xs) {
                 margin: 15px auto 30px;
@@ -247,19 +247,19 @@
             }
 
             @include respond-to(md) {
-                margin: 30px auto 40px auto;
+                margin: 50px auto 40px auto;
             }
 
             @include respond-to(lg) {
-                margin: 70px auto 60px;
+                margin: 25px auto 60px;
             }
 
             @include respond-to(xlg) {
-                margin: 60px auto;
+                margin: 35px auto;
             }
 
             @include respond-to(xxlg) {
-                margin: 30px auto;
+                margin: 10px auto 35px;
             }
 
             small {
@@ -285,6 +285,18 @@
 
                 @include respond-to(md) {
                     font-size: 15pt;
+                }
+
+                @include respond-to(lg) {
+                    font-size: 17pt;
+                }
+
+                @include respond-to(xlg) {
+                    font-size: 18pt;
+                }
+
+                @include respond-to(xxlg) {
+                    font-size: 19pt;
                 }
             }
         }
@@ -320,7 +332,15 @@
                 }
 
                 @include respond-to(lg) {
-                    font-size: 170%;
+                    font-size: 25.5pt;
+                }
+
+                @include respond-to(xlg) {
+                    font-size: 27pt;
+                }
+
+                @include respond-to(xxlg) {
+                    font-size: 28.5pt;
                 }
             }
         }
@@ -340,11 +360,20 @@
             }
 
             @include respond-to(md) {
-                margin-top: 13pt;
+                font-size: 13.5pt;
             }
 
             @include respond-to(lg) {
                 margin-top: 25px;
+                font-size: 15.3pt;
+            }
+
+            @include respond-to(xlg) {
+                font-size: 16.2pt;
+            }
+
+            @include respond-to(xxlg) {
+                font-size: 17.1pt;
             }
         }
         
@@ -372,11 +401,11 @@
                 }
 
                 @include respond-to(md) {
-                    height: 90%;
+                    height: 105%;
                 }
 
                 @include respond-to(lg) {
-                    height: 110%;
+                    height: 130%;
                 }
 
                 @include respond-to(xlg) {

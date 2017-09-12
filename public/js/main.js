@@ -47,6 +47,14 @@ $(document).ready(function () {
                 scrollTop: 0
             }, 800, function () {
                 $('.page-3').hide();
+
+                // reset get started page
+                $('.bundle-selected-1').html('<br>');
+                $('.bundle-selected-2').html('<br>');
+                $('.bundle-selected-3').html('<br>');
+
+                $('.bundle-choice').each(function (item) { $(this).removeClass('selected') });
+                $('.bundle-choice .text').text("Choose");
             });
 
         } else {
@@ -116,6 +124,10 @@ $(document).ready(function () {
 
         $(this).addClass('selected');
         $('.bundle-choice.selected .text').text("Selected");
+
+        $('.bundle-selected-1').text('Fantastic Choice!');
+        $('.bundle-selected-2').text('Your now on your way to getting your store future fresh');
+        $('.bundle-selected-3').text('Just a few simple details to get your quote');
     });
 
     // var id;
