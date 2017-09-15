@@ -121,6 +121,13 @@ $(document).ready(function () {
             });
 
         } else {
+            // check if there is a selected bundle.
+            var elem = $('.bundle-choice.selected');
+            if(elem.length <= 0) {
+                alert("Select your bundle first.");
+                return;
+            }
+
             $('.page-4').show();
             setTimeout(function () {
 
